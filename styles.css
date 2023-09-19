@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav-container {
+  width: 100%;
+  height: 100px;
+}
+.nav-elements {
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.nav-elements li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.edit-elements-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.edit-elements-container .edit-elements-list {
+  margin-left: 50px;
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  visibility: visible;
+}
+
+.edit-elements-container .edit-elements-list li {
+  list-style: none;
+  cursor: pointer;
+}
+
+#edit-btn:hover .edit-elements-container .edit-elements-list {
+  visibility: hidden;
+}
+
+button:hover .edit-elements-container .edit-elements-list {
+  visibility: hidden;
+}
+
+.edit-elements-container .undo-elements-list {
+  visibility: visible;
+  margin-left: 50px;
+  height: 200px;
+  width: 300px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.edit-elements-container .undo-elements-list li {
+  list-style: none;
+}
+
+#undo-btn:hover .edit-elements-container .undo-elements-list {
+  visibility: hidden;
+}
